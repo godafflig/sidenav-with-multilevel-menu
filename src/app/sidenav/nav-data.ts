@@ -3,13 +3,13 @@ import { INavbarData } from "./helper";
 export const navbarData: INavbarData[] = [
     {
         routeLink: 'dashboard',
-        icon: 'fal fa-home',
-        label: 'Dashboard'
+        icon: 'fal fa-user',
+        label: 'Mon CV'
     },
     {
         routeLink: 'products',
-        icon: 'fal fa-box-open',
-        label: 'Products',
+        icon: 'fal fa-laptop-code',
+        label: 'Projets',
         items: [
             {
                 routeLink: 'products/level1.1',
