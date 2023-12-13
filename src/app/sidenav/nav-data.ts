@@ -12,12 +12,24 @@ export const navbarData: INavbarData[] = [
     label: 'Projets',
     items: [
       {
-        routeLink: 'project/1',
-        label: 'Ca roule ma poule',
+        routeLink: 'project/sokoban',
+        label: 'sokoban',
       },
       {
-        routeLink: 'project/2',
-        label: 'sokoban',
+        routeLink: 'project/Easypitch',
+        label: 'Easypitch',
+      },
+      {
+        routeLink: 'project/Couplefamille',
+        label: 'Couplefamille',
+      },
+      {
+        routeLink: 'project/CaRouleMaPoule',
+        label: 'CaRouleMaPoule',
+      },
+      {
+        routeLink: 'project/Biggerthanme',
+        label: 'Biggerthanme',
       }
     ]
   },

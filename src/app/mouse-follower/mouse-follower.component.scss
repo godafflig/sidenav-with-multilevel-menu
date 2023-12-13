@@ -1,0 +1,11 @@
+/* mouse-follower.component.css */
+.follow-mouse {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    /* Centrer par rapport à la souris */
+}

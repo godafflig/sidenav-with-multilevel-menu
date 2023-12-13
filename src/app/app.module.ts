@@ -10,7 +10,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagesComponent } from './pages/pages.component';
 import { MediaComponent } from './media/media.component';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
-import { ProjectnameComponent } from './project/projectname/projectname.component';
+import { CaRouleMaPouleComponent } from './project/ca-roule-ma-poule/ca-roule-ma-poule.component';
+import { BiggerthanmeComponent } from './project/biggerthanme/biggerthanme.component';
+import { CouplefamilleComponent } from './project/couplefamille/couplefamille.component';
+import { EasypitchComponent } from './project/easypitch/easypitch.component';
+import { MouseFollowerComponent } from './mouse-follower/mouse-follower.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { ProjectnameComponent } from './project/projectname/projectname.componen
     PagesComponent,
     MediaComponent,
     SublevelMenuComponent,
-    ProjectnameComponent
+    CaRouleMaPouleComponent,
+    BiggerthanmeComponent,
+    CouplefamilleComponent,
+    EasypitchComponent,
+    MouseFollowerComponent
   ],
   imports: [
     BrowserModule,
