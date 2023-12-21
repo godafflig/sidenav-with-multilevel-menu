@@ -1,0 +1,201 @@
+.card,
+.card1 {
+    background-color: #282828;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    /* Assurez-vous qu'il n'y a pas de marge extérieure supplémentaire */
+}
+
+.card1 {
+    background-color: #282828;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    /* max-width: 350px; Retiré parce que grid s'en occupe */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    margin: 0;
+    grid-column: 1 / -1;
+    /* Prend toute la largeur */
+    grid-row: 1;
+    /* Place .card1 en haut de la grille */
+    /* Hauteur supplémentaire si nécessaire */
+    height: auto;
+    /* ou une valeur spécifique comme 400px */
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Assurez-vous que l'image ne dépasse pas des coins arrondis */
+}
+
+.profile-image img {
+    width: 100%;
+    /* L'image remplira complètement le conteneur .profile-image */
+    height: auto;
+    border-radius: 50%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Deux colonnes de taille égale */
+    grid-gap: 10px;
+    /* Espace entre les colonnes et les rangées */
+    padding: 10px;
+    /* Padding autour de la grille */
+    justify-content: space-evenly;
+}
+
+@media (min-width: 1501px) {
+    .box {
+        grid-template-columns: repeat(3, 1fr);
+        /* Quatre colonnes sur les grands écrans */
+        grid-gap: 20px;
+        /* Plus d'espace entre les colonnes */
+        padding: 20px;
+        /* Plus de padding autour de la grille */
+    }
+
+    .card,
+    .card1 {
+        padding: 30px;
+        /* Plus de padding à l'intérieur des cartes */
+        margin: 0;
+        /* Assurez-vous qu'il n'y a pas de marge extérieure supplémentaire */
+        max-width: none;
+        /* Les cartes peuvent s'étendre plus librement */
+    }
+
+    .card1 {
+        grid-column: 1 / -1;
+        /* Prend toute la largeur */
+        grid-row: 1;
+        /* Place .card1 en haut de la grille */
+        /* Hauteur supplémentaire si nécessaire */
+        height: auto;
+        /* ou une valeur spécifique comme 400px */
+    }
+
+    /* Vous pouvez également ajuster d'autres éléments de style si nécessaire */
+}
+
+@media only screen and (max-width: 350px) {
+
+    .card,
+    .card1 {
+        padding: 10px;
+        /* Moins de padding à l'intérieur des cartes pour économiser de l'espace */
+        max-width: none;
+        /* Permet aux cartes de s'étendre à toute la largeur */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Une ombre portée plus subtile pour les petits écrans */
+        max-width: 150px;
+    }
+    .tags {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tag {
+        background-color: red;
+        color: #fff;
+        border-radius: 16px;
+        padding: 5px 10px;
+        font-size: 22px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .box {
+        grid-template-columns: 1fr;
+        /* Une seule colonne pour les petits écrans */
+        grid-gap: 5px;
+        /* Moins d'espace entre les cartes pour économiser de l'espace */
+        padding: 5px;
+        /* Moins de padding autour de la grille */
+    }
+
+    .card,
+    .card1 {
+        padding: 10px;
+        /* Moins de padding à l'intérieur des cartes pour économiser de l'espace */
+        max-width: none;
+        /* Permet aux cartes de s'étendre à toute la largeur */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Une ombre portée plus subtile pour les petits écrans */
+        max-width: 250px;
+    }
+
+    .card1 {
+        grid-column: 1 / -1;
+        /* Le .card1 s'étendra sur la seule colonne disponible */
+    }
+
+    /* Ajustements pour les images et vidéos pour les petits écrans */
+    .card img,
+    .card video {
+        width: 100%;
+        /* Les images et vidéos s'étendent à toute la largeur */
+        height: auto;
+    }
+
+    /* Éventuellement, réduire la taille de la police pour les petits écrans */
+    .card,
+    .card1,
+    .tags {
+        font-size: 0.8em;
+    }
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+}
+
+.tag {
+    background-color: #F55507;
+    color: #fff;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+@media (min-width:1550px) {
+    .tag {
+       
+        width: 4em;
+        height: 2em;
+        align-items: center;
+        text-align: center;
+        margin: 30px;
+        font-size: 2em;
+        
+    }
+
+}
+@media (min-width: 2000px) {
+    * {
+        font-size: 1.2em;
+        /* Ceci augmentera la taille de la police pour tout le texte dans le body */
+    }
+   
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+    * {
+        font-size: 1em;
+        /* Ceci augmentera la taille de la police pour tout le texte dans le body */
+    }
+    /* Si vous souhaitez également cibler d'autres éléments spécifiques, vous pouvez les ajouter ici */
+}
