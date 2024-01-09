@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Assurez-vous d'importer FormsModule
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
@@ -11,7 +12,6 @@ import { PagesComponent } from './pages/pages.component';
 import { MediaComponent } from './media/media.component';
 import { SublevelMenuComponent } from './sidenav/sublevel-menu.component';
 import { CaRouleMaPouleComponent } from './project/ca-roule-ma-poule/ca-roule-ma-poule.component';
-import { BiggerthanmeComponent } from './project/biggerthanme/biggerthanme.component';
 import { CouplefamilleComponent } from './project/couplefamille/couplefamille.component';
 import { EasypitchComponent } from './project/easypitch/easypitch.component';
 import { MouseFollowerComponent } from './mouse-follower/mouse-follower.component';
@@ -29,18 +29,19 @@ import { SolfezComponent } from './project/solfez/solfez.component';
     MediaComponent,
     SublevelMenuComponent,
     CaRouleMaPouleComponent,
-    BiggerthanmeComponent,
     CouplefamilleComponent,
     EasypitchComponent,
     MouseFollowerComponent,
     ContactComponent,
     PresentationComponent,
-    SolfezComponent
+    SolfezComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

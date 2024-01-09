@@ -1,1 +1,10 @@
-<div class="follow-mouse"></div>
+
+<div *ngFor="let circle of circles; let i = index" class="circle" 
+     [ngStyle]="{
+       'left.px': circle.x, 
+       'top.px': circle.y, 
+       'transform': 'scale(' + circle.scale + ')', 
+       'background-color': circle.color,
+       'z-index': 100 - i 
+     }">
+</div>

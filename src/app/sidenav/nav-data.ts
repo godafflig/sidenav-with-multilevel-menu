@@ -37,11 +37,7 @@ export const navbarData: INavbarData[] = [
       }
     ]
   },
-  {
-    routeLink: 'pages',
-    icon: 'fal fa-file',
-    label: 'Contacter moi'
-  },
+  
   {
     routeLink: 'Passion',
     icon: 'fal fa-camera',
@@ -49,7 +45,13 @@ export const navbarData: INavbarData[] = [
   },
   {
     routeLink: 'Presentation',
-    icon: 'fal fa-user',
+   
+    icon: 'fal fa-file',
     label: 'Tom benat'
+  },
+  {
+    routeLink: 'Contact',
+    icon: 'fal fa-user',
+    label: 'Contacter moi'
   },
 ];
