@@ -151,7 +151,9 @@
     .card1,
     .tags {
         font-size: 0.8em;
+        
     }
+   
 }
 .tags {
     display: flex;
@@ -169,6 +171,7 @@
     margin: 0;
 }
 .neon-button {
+    width: 200px;
     font-size: 1rem;
     display: inline-block;
     cursor: pointer;
@@ -216,12 +219,12 @@
     color: #fff;
     border-radius: 16px;
     padding: 5px 10px;
-    font-size: 25px;
+    font-size: 10px;
 }
 @media (min-width:1550px) {
     .tag {
 
-        width: 4em;
+        width: 6em;
         height: 2em;
         align-items: center;
         text-align: center;

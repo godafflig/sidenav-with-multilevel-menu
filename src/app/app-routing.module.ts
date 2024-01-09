@@ -8,17 +8,25 @@ import { EasypitchComponent } from './project/easypitch/easypitch.component';
 import { CouplefamilleComponent } from './project/couplefamille/couplefamille.component';
 import { CaRouleMaPouleComponent } from './project/ca-roule-ma-poule/ca-roule-ma-poule.component';
 import { BiggerthanmeComponent } from './project/biggerthanme/biggerthanme.component';
+import { GroupietrackerComponent } from './project/groupietracker/groupietracker.component';
+import { ContactComponent } from './contact/contact.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { SolfezComponent } from './project/solfez/solfez.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: '', redirectTo: 'Presentation', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'pages', component: PagesComponent},
+  {path: 'Passion', component: PagesComponent},
   {path: 'media', component: MediaComponent},
   { path: 'project/sokoban', component: sokobanComponent },
   { path: 'project/Easypitch', component: EasypitchComponent },
   { path: 'project/Couplefamille', component: CouplefamilleComponent },
   { path: 'project/CaRouleMaPoule', component: CaRouleMaPouleComponent },
   { path: 'project/Biggerthanme', component: BiggerthanmeComponent },
+  { path: 'project/Groupietracker', component: GroupietrackerComponent },
+  { path: 'Contact', component: ContactComponent },
+  { path: 'Presentation', component: PresentationComponent },
+  { path: 'project/Solfez', component: SolfezComponent },
 ];
 
 

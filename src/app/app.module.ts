@@ -15,6 +15,9 @@ import { BiggerthanmeComponent } from './project/biggerthanme/biggerthanme.compo
 import { CouplefamilleComponent } from './project/couplefamille/couplefamille.component';
 import { EasypitchComponent } from './project/easypitch/easypitch.component';
 import { MouseFollowerComponent } from './mouse-follower/mouse-follower.component';
+import { ContactComponent } from './contact/contact.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { SolfezComponent } from './project/solfez/solfez.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { MouseFollowerComponent } from './mouse-follower/mouse-follower.componen
     BiggerthanmeComponent,
     CouplefamilleComponent,
     EasypitchComponent,
-    MouseFollowerComponent
+    MouseFollowerComponent,
+    ContactComponent,
+    PresentationComponent,
+    SolfezComponent
   ],
   imports: [
     BrowserModule,

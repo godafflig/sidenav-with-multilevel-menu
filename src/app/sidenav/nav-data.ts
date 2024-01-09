@@ -3,7 +3,7 @@ import { INavbarData } from "./helper";
 export const navbarData: INavbarData[] = [
   {
     routeLink: 'dashboard',
-    icon: 'fal fa-user',
+    icon: 'fal fa-file',
     label: 'Mon CV'
   },
   {
@@ -28,19 +28,28 @@ export const navbarData: INavbarData[] = [
         label: 'CaRouleMaPoule',
       },
       {
-        routeLink: 'project/Biggerthanme',
-        label: 'Biggerthanme',
+        routeLink: 'project/Groupietracker',
+        label: 'Deeztrack',
+      },
+      {
+        routeLink: 'project/Solfez',
+        label: 'Solfez',
       }
     ]
   },
   {
     routeLink: 'pages',
     icon: 'fal fa-file',
-    label: 'Pages'
+    label: 'Contacter moi'
   },
   {
-    routeLink: 'media',
+    routeLink: 'Passion',
     icon: 'fal fa-camera',
-    label: 'Media'
+    label: 'Mes passion'
+  },
+  {
+    routeLink: 'Presentation',
+    icon: 'fal fa-user',
+    label: 'Tom benat'
   },
 ];

@@ -11,8 +11,10 @@ export class MouseFollowerComponent {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent) {
+    
     const follower = this.el.nativeElement.querySelector('.follow-mouse');
     this.renderer.setStyle(follower, 'left', `${e.clientX}px`);
     this.renderer.setStyle(follower, 'top', `${e.clientY}px`);
+
   }
 }
