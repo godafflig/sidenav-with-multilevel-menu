@@ -18,6 +18,8 @@ import { MouseFollowerComponent } from './mouse-follower/mouse-follower.componen
 import { ContactComponent } from './contact/contact.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { SolfezComponent } from './project/solfez/solfez.component';
+import { EmailService } from './service/email.service';
+
 
 @NgModule({
   declarations: [

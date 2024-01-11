@@ -1,5 +1,13 @@
+// contact.component.ts
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { EmailService } from '../service/email.service';
+
+
+
+
+
+
+
 
 @Component({
   selector: 'app-contact',
@@ -7,25 +15,24 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  model: ContactModel = {
+  model: any = {
     name: '',
     email: '',
     message: ''
   };
 
-  constructor(private http: HttpClient) {}
+  constructor(private emailService: EmailService) {}
 
   onSubmit() {
-    this.http.post('/send-email', this.model).subscribe(
-      response => console.log('Email sent successfully'),
-      error => console.error('There was an error!', error)
+    this.emailService.sendEmail(this.model).subscribe(
+      (      response: any) => {
+        console.log('Email sent successfully', response);
+        // Ici, vous pouvez ajouter la logique pour informer l'utilisateur de la réussite de l'envoi
+      },
+      (      error: any) => {
+        console.error('Error sending email', error);
+        // Ici, vous gérez les erreurs, par exemple en informant l'utilisateur que l'envoi a échoué
+      }
     );
   }
 }
-
-export interface ContactModel {
-  name: string;
-  email: string;
-  message: string;
-}
-
