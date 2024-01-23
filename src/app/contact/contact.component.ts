@@ -24,6 +24,7 @@ export class ContactComponent {
   constructor(private emailService: EmailService) {}
 
   onSubmit() {
+    //route de back avec import 
     this.emailService.sendEmail(this.model).subscribe(
       (      response: any) => {
         console.log('Email sent successfully', response);

@@ -3,9 +3,9 @@
     background-color: #282828;
     color: #fff;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Arial', sans-serif;
-    max-width: 250px;
+    max-width: 500px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     margin: 0;
     /* Assurez-vous qu'il n'y a pas de marge extérieure supplémentaire */
@@ -14,7 +14,7 @@
 .card1 {
     background-color: #282828;
     color: #fff;
-border-radius: 8px;
+    border-radius: 8px;
     padding: 20px;
     font-family: 'Arial', sans-serif;
     /* max-width: 350px; Retiré parce que grid s'en occupe */
@@ -45,6 +45,7 @@ border-radius: 8px;
     border-radius: 50%;
 }
 
+
 .box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,7 +54,8 @@ border-radius: 8px;
     /* Espace entre les colonnes et les rangées */
     padding: 10px;
     /* Padding autour de la grille */
-    justify-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
 }
 
 @media (min-width: 1501px) {
@@ -101,11 +103,12 @@ border-radius: 8px;
         /* Une ombre portée plus subtile pour les petits écrans */
         max-width: 150px;
     }
+
     .tags {
         display: flex;
         justify-content: center;
     }
-    
+
     .tag {
         background-color: red;
         color: #fff;
@@ -113,13 +116,14 @@ border-radius: 8px;
         padding: 5px 10px;
         font-size: 22px;
     }
+
     .card video {
         width: 50%;
         /* Les images et vidéos s'étendent à toute la largeur */
         height: auto;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -161,8 +165,14 @@ border-radius: 8px;
     .card1,
     .tags {
         font-size: 0.8em;
-        
+
     }
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .tags {
@@ -180,23 +190,24 @@ border-radius: 8px;
 
 @media (min-width:1550px) {
     .tag {
-       
+
         width: 4em;
         height: 2em;
         align-items: center;
         text-align: center;
         margin: 30px;
         font-size: 2em;
-        
+
     }
 
 }
+
 @media (min-width: 2000px) {
     * {
         font-size: 1.2em;
         /* Ceci augmentera la taille de la police pour tout le texte dans le body */
     }
-   
+
 }
 
 @media (min-width: 1500px) and (max-width: 2000px) {
@@ -204,5 +215,6 @@ border-radius: 8px;
         font-size: 1em;
         /* Ceci augmentera la taille de la police pour tout le texte dans le body */
     }
+
     /* Si vous souhaitez également cibler d'autres éléments spécifiques, vous pouvez les ajouter ici */
 }
