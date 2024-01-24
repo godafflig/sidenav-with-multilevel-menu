@@ -4,7 +4,7 @@ export const navbarData: INavbarData[] = [
   {
     routeLink: 'dashboard',
     icon: 'fal fa-file',
-    label: 'Mon CV'
+    label: 'A propros'
   },
   {
     routeLink: 'products',
@@ -47,11 +47,11 @@ export const navbarData: INavbarData[] = [
     routeLink: 'Presentation',
    
     icon: 'fal fa-file',
-    label: 'Tom benat'
+    label: 'CV'
   },
   {
     routeLink: 'Contact',
-    icon: 'fal fa-user',
+    icon: 'fal fa-paper-plane',
     label: 'Contacter moi'
   },
 ];
