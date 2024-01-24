@@ -43,7 +43,7 @@ export class MouseFollowerComponent implements OnInit {
       this.circles[i].x += (nextCircle.x - this.circles[i].x) * followSpeed;
       this.circles[i].y += (nextCircle.y - this.circles[i].y) * followSpeed;
     }
-
+    
     // Le premier cercle suit directement la souris
     this.circles[0].x += (this.mouseCoords.x - this.circles[0].x) * followSpeed;
     this.circles[0].y += (this.mouseCoords.y - this.circles[0].y) * followSpeed;

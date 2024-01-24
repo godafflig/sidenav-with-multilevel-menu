@@ -2,8 +2,10 @@
   <input type="text" [(ngModel)]="model.name" name="name" placeholder="name" />
   <input type="email" [(ngModel)]="model.email" name="email" placeholder="email" required />
   <textarea [(ngModel)]="model.message" name="message" placeholder="message" required></textarea>
+
+  <div class="mon-composant-container">
+    <button class="neon-button" type="submit">Send
+      Message<i style="margin-left: 20px;" class="fa fa-mouse-pointer" aria-hidden="true"></i></button>
+  </div>
 </form>
-<div class="mon-composant-container">
-  <button class="neon-button" type="submit" [disabled]="!contactForm.form.valid">Send
-    Message<i style="margin-left: 20px;" class="fa fa-mouse-pointer" aria-hidden="true"></i></button>
-</div>
+<!-- [disabled]="!contactForm.form.valid" -->
