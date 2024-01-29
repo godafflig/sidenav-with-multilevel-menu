@@ -1,11 +1,11 @@
-.card,
-.card1 {
+
+.card{
     background-color: #282828;
     color: #fff;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Arial', sans-serif;
-    max-width: 350px;
+    max-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     margin: 0;
     /* Assurez-vous qu'il n'y a pas de marge extérieure supplémentaire */
@@ -20,13 +20,8 @@
     /* max-width: 350px; Retiré parce que grid s'en occupe */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     margin: 0;
-    grid-column: 1 / -1;
-    /* Prend toute la largeur */
-    grid-row: 1;
-    /* Place .card1 en haut de la grille */
-    /* Hauteur supplémentaire si nécessaire */
     height: auto;
-    /* ou une valeur spécifique comme 400px */
+    width: 100%;
 }
 
 .profile-image {
@@ -46,14 +41,13 @@
 }
 
 .box {
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
-    /* Deux colonnes de taille égale */
-    grid-gap: 10px;
-    /* Espace entre les colonnes et les rangées */
-    padding: 10px;
-    /* Padding autour de la grille */
-}
+  }
 
 @media (min-width: 1501px) {
     .box {
@@ -154,13 +148,15 @@
     .card1,
     .tags {
         font-size: 0.8em;
-        
+        width: 100%;
     }
 }
 
 .tags {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .tag {
@@ -183,6 +179,19 @@
         
     }
 
+}
+@media (min-width: 500px) and (max-width: 1100px) {
+    body {
+      font-size: 2em;
+      /* Ceci augmentera la taille de la police pour tout le texte dans le body */
+    }
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 @media (min-width: 2000px) {
     * {

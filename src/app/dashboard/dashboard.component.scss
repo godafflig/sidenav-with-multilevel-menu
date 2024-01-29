@@ -16,7 +16,8 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(1, 1fr);
-  gap: 45px;
+  gap: 20px;
+  margin-left: auto;
 }
 
 .neon-button {
@@ -28,8 +29,6 @@
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
-  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   position: relative;
 
 }
@@ -44,7 +43,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 0 2em 0.5em var(--clr-neon);
   opacity: 0;
   background-color: var(--clr-neon);
   z-index: -1;
@@ -65,7 +63,6 @@
 
 .neon-button:hover::after,
 .neon-button:focus::after {
-  box-shadow: 0 0 2em 0.5em var(--clr-neon); // Ajustez cette ombre pour correspondre à l'effet de la première image
   opacity: 1;
 }
 
@@ -75,7 +72,7 @@
   border-radius: 8px;
   padding: 7px;
   font-family: 'Arial', sans-serif;
-  max-width: 350px;
+  max-width: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 
 }
@@ -84,28 +81,32 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 .profile-image {
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  border-radius: 50%;
-  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+  margin-left: 80px;
 }
 
 .profile-image img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+  width: 217px;
+  height: 289px;
+  margin: 10px 10px 10px 10px;
 }
 
 .description {
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
+  grid-template-columns: fr;
+  column-width: 15em;
+  column-rule: 1px solid rgb(75, 70, 74);
+  margin: 5%;
+
 }
 
 .spotify-stats {
@@ -115,7 +116,10 @@
 
 .tags {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 10px;
 }
 
 .tag {
@@ -124,6 +128,7 @@
   border-radius: 16px;
   padding: 5px 10px;
   font-size: 12px;
+  gap: 30px;
 }
 
 @media (min-width: 2000px) {
@@ -146,6 +151,14 @@
   /* Si vous souhaitez également cibler d'autres éléments spécifiques, vous pouvez les ajouter ici */
 }
 
+
+
+
+
+
+/* Si vous souhaitez également cibler d'autres éléments spécifiques, vous pouvez les ajouter ici */
+
+
 .box2 {
   width: 100%;
   display: flex;
@@ -153,4 +166,28 @@
   justify-content: center;
   flex-direction: row;
   gap: 30px;
+}
+
+@media (max-width: 500px) {
+  body {
+    /* Ceci augmentera la taille de la police pour tout le texte dans le body */
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 140px;
+  }
+
+  * {
+    font-size: small;
+  }
+
+  .box {
+
+    display: flex;
+
+
+  }
+
+
 }
