@@ -88,3 +88,14 @@ form {
 .neon-button:focus::after {
   opacity: 1;
 }
+.box2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border: 3px solid #253238;
+  border-radius: 20px;
+  gap: 30px;
+  padding: 10px;
+}

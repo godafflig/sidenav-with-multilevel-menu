@@ -1,3 +1,13 @@
+.mon-composant-container {
+    // background: radial-gradient(circle 150px at center, var(--clr-bg), #EEEEEE);EEEEEE
+    // background: radial-gradient(var(--clr-bg), #ffff);
+    font-family: "Balsamiq Sans", cursive;
+    color: var(--clr-neon);
+    --clr-neon: #263238;
+    --clr-bg: #fffffF;
+    box-sizing: border-box;
+    margin: 0;
+  }
 .card,
 .card1 {
     background-color: #282828;
@@ -107,6 +117,7 @@
     .tags {
         display: flex;
         justify-content: center;
+        gap: 20px;
     }
 
     .tag {
@@ -165,7 +176,7 @@
     .card1,
     .tags {
         font-size: 0.8em;
-
+        gap: 10px;
     }
 }
 
@@ -178,6 +189,7 @@
 .tags {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .tag {
@@ -232,3 +244,49 @@
 
     /* Si vous souhaitez également cibler d'autres éléments spécifiques, vous pouvez les ajouter ici */
 }
+.neon-button {
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    position: relative;
+  
+  }
+  
+  
+  
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button:hover,
+  .neon-button:focus {
+    color: var(--clr-bg);
+    text-shadow: none;
+  
+  }
+  
+  .neon-button:hover::before,
+  .neon-button:focus::before {
+    opacity: 1;
+  }
+  
+  .neon-button:hover::after,
+  .neon-button:focus::after {
+    opacity: 1;
+  }
+  

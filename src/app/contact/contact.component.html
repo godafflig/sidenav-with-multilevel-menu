@@ -1,11 +1,35 @@
 <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-  <input type="text" [(ngModel)]="model.name" name="name" placeholder="name" />
-  <input type="email" [(ngModel)]="model.email" name="email" placeholder="email" required />
-  <textarea [(ngModel)]="model.message" name="message" placeholder="message" required></textarea>
+  <p>nom prenom :</p>
+  <input type="text" [(ngModel)]="model.name" name="name" placeholder="ton petit nom" />
+  <p>email :</p>
+  <input type="email" [(ngModel)]="model.email" name="email" placeholder="ton email " required />
+  <p>message :</p>
+  <textarea [(ngModel)]="model.message" name="message" placeholder="et ton message d'amour" required></textarea>
 
   <div class="mon-composant-container">
     <button class="neon-button" type="submit">Send
       Message<i style="margin-left: 20px;" class="fa fa-mouse-pointer" aria-hidden="true"></i></button>
   </div>
 </form>
+
+<div class="box2">
+  <h1>Contact</h1>
+  <div class="mon-composant-container">
+      <a href="https://www.linkedin.com/in/tom-benat-764a171a1/" class="neon-button">
+          <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+  </div>
+  <div class="mon-composant-container">
+      <a href="https://www.linkedin.com/in/tom-benat-764a171a1/" class="neon-button">
+          <i class="fab fa-github fa-2x"></i>
+      </a>
+  </div>
+  <div class="mon-composant-container">
+      <a href="" class="neon-button">
+          <i class="fas fa-phone-square  fa-2x">06.69.91.20.25</i>
+      </a>
+  </div>
+  <h2>bonne journée :)</h2>
+</div>
+
 <!-- [disabled]="!contactForm.form.valid" -->
