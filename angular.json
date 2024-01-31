@@ -50,6 +50,14 @@
               ],
               "outputHashing": "all"
             },
+            "staging": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environment/environment.ts",
+                  "with": "src/environment/environment.prod.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -58,6 +66,7 @@
               "sourceMap": true,
               "namedChunks": true
             }
+            
           },
           "defaultConfiguration": "production"
         },
@@ -69,6 +78,9 @@
             },
             "development": {
               "browserTarget": "sidenav-with-multilevel-menu:build:development"
+            },
+            "staging": {
+              "browserTarget": "sidenav-with-multilevel-menu:build:staging"
             }
           },
           "defaultConfiguration": "development"
